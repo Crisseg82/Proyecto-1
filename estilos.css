@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(43, 54, 43);
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background: rgb(39, 39, 39);
+}
+
+.enlace {
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo {
+    height: 60px;
+}
+
+.header ul {
+    float: right;
+    margin-right: 20px;
+}
+
+.header ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 7px 13px;
+
+}
+
+.header li a:hover {
+    text-shadow: 0px 0px 20px rgb(21, 255, 0);
+    color: #fff;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.d-flex {
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+#grilla {
+    padding: 50px 0px 0px 0px;
+    display: grid;
+    grid-template-areas:
+        "nav clientes clientes"
+        "nav producto producto"
+        "nav producto producto"
+        "footer footer footer";
+
+    grid-template-rows: 160px 2fr 75px;
+    grid-template-columns: 20% auto 15%;
+    row-gap: 10px;
+    column-gap: 20px;
+    height: 100vh;
+    align-items: baseline;
+}
+
+.clientes {
+    grid-area: clientes;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.clientes a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.clientes a:hover {
+    text-shadow: 0px 0px 20px rgb(21, 255, 0);
+    color: #fff;
+}
+
+.hola {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.card {
+    list-style: none;
+    background: #637a65;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.atencion {
+    background-color: #475850;
+    border-radius: 10px;
+    padding: 20px 20px 20px;
+    display: grid;
+    justify-content: space-evenly;
+    align-content: space-between;
+    width: 450px;
+    height: 15vh;
+}
+
+.texto-atencion {
+    text-decoration: none;
+    color: rgb(74, 255, 57);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+#productos {
+    grid-area: producto;
+}
+
+.contenedor {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gpu {
+    width: 18rem;
+    border-radius: 10px;
+}
+
+.gpu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+    border-radius: 10px;
+}
+
+.gpu a:hover {
+    box-shadow: 0px 0px 15px rgb(135, 255, 79);
+    color: #fff;
+}
+
+
+.navegacion {
+    background: #475850;
+    grid-area: nav;
+    border-radius: 10px;
+}
+
+.title-nav {
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: rgb(56, 245, 49);
+    font-weight: 900;
+
+}
+
+.hardware {
+    list-style: none;
+    padding: 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.hardware li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: block;
+}
+
+.hardware li a:hover {
+    background: #2f4735;
+}
+
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    display: grid;
+    justify-content: center;
+}
+
+.texto-footer {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+
+
+@media (max-width: 952px) {
+    .enlace {
+        padding-left: 20px;
+    }
+
+    .header ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    .header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(39, 39, 39);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    .header ul li a {
+        font-size: 20px;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .slide {
+        display: none;
+    }
+}
