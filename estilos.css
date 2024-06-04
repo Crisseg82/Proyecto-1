@@ -7,6 +7,8 @@ body{
     background-color: rgb(43, 54, 43);
 }
 
+ /* Menu Superior */
+
 .header {
     height: 80px;
     width: 100%;
@@ -66,6 +68,8 @@ body{
     padding: 20px;
     width: 100%;
 }
+
+ /* Grilla */
 
 #grilla {
     padding: 50px 0px 0px 0px;
@@ -220,22 +224,72 @@ body{
     font-size: 1.2rem;
 }
 
+ /* Media Queries */
 
 
 @media (max-width: 952px) {
-    .enlace {
-        padding-left: 20px;
-    }
-
-    .header ul li a {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 858px) {
     .checkbtn {
         display: block;
     }
+    .clientes{
+        display: grid;
+    }
+    
+
+    .header ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgb(39, 39, 39);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .header ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    .slide {
+        display: none;
+    }
+    .contenedor{
+        display: none;
+    }
+    #grilla {
+        padding: 50px 0px 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "nav clientes productos"
+            "nav productos productos"
+            "nav productos productos"
+            "footer footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        column-gap: 20px;
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkbtn {
+        display: block;
+    }
+    .clientes{
+        display: grid;
+    }
+    
 
     .header ul {
         position: fixed;
@@ -265,4 +319,23 @@ body{
     .slide {
         display: none;
     }
+    .contenedor{
+        display: none;
+    }
+    #grilla {
+        padding: 50px 0px 0px 0px;
+        display: grid;
+        grid-template-areas:
+            "clientes clientes clientes"
+            "nav nav nav"
+            "nav nav nav"
+            "footer footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        row-gap: 10px;
+        column-gap: 20px;
+        height: 100vh;
+        justify-content: center;
+    }
+    
 }
