@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubicacion</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <body>
+    <header>
+      <nav class="header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="bi bi-pc-display"></i>
+        </label>
+        <a href="index.html" class="enlace"><img src="./Perifericos/Logo Pc.jpg" alt="logo" class="logo"></a>
+        <ul>
+          <li><a href="https://api.whatsapp.com/send?phone=541141819782&text=Hola, Me gusto tu pagina :D">Whatsapp</a>
+          </li>
+          <li><a href="index.html">Atencion al cliente</a></li>
+          <li><a href="ubicacion.html">Ubicacion</a></li>
+          <li><a href="redes.html">Redes</a></li>
+          <li><a type="button" class="garantia" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Garantia de los productos
+            </a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Garantia</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-6">Notebooks, Impresoras, Monitores tienen 30 días de garantia. productos Logitech y productos
+              Seagate: El cliente deberá dirigirse al servicie oficial que le será indicado llamando al número de
+              teléfono
+              correspondiente a la marca de su producto.</p>
+            <ul>
+              <li>ACER 0800-444-1318</li>
+              <li>ASUS 0800-122-0563</li>
+              <li>BROTHER 0810-222-7684</li>
+              <li>EPSON 0800-288-3776 / 011-51670400</li>
+              <li>HP NOTEBOOKS y MONITORES 0800-345-6588</li>
+              <li>LENOVO 0800-666-0011/ 0800-222-0279 L a V de 9 a 18 h.</li>
+              <li>LG 0810-555-5454</li>
+              <li>LOGITECH 0800-555-3284</li>
+              <li> PHILLIPS 0800-444-7749 L a V de 8 a 20 h. Sab 8 a 14h</li>
+              <li>SAMSUNG 0800-333-3733</li>
+              <li>SEAGATE Registrar el producto en https://www.seagate.com/la/es/support/warranty-and-replacements/</li>
+              <li>GIGABYTE 011-6091-2350</li>
+            </ul>
+            <p>Política de garantía de los monitores
+              Las marcas, solo aceptan garantía de monitores con mas de 5 (cinco) pixeles muertos en pantalla., para mas
+              información comunícate con la marca de tu monitor.</p>
+
+
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="buscar">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2 w-25" type="search" placeholder="Search" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+
+      <div class="contenedor-ubicacion">
+        <div class="ubicacion">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52523.52673226885!2d-58.83523974745868!3d-34.63650482371627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc945bc2149eff%3A0x72f476f24b92b3fa!2sMoreno%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717475783894!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="container w-25 containerTabla">
+          <table class="tabla">
+            <thead>
+              <tr class="fila">
+                <th class="bg-primary">Atención</th>
+                <th class="bg-primary"></th>
+                <th class="bg-primary">Horarios</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Lunes</td>
+                <td>10:00 a 19:00hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Martes</td>
+                <td>10:00 a 19:00hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Miérc</td>
+                <td>10:00 a 19:00hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Jueves</td>
+                <td>10:00 a 19:00hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Viernes</td>
+                <td>10:00 a 19:00hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-primary">Abierto</th>
+                <td>Sábado</td>
+                <td>10 a 14 hs</td>
+
+              </tr>
+              <tr class="fila">
+                <th class="bg-danger">Cerrado</th>
+                <td>Domingo</td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+      <footer class="footer-gpu">
+        <p class="texto-footer">&copy; Pagina de Hardware 2024</p>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+      <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" 
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>-->
+
+      <script src="./js/bootstrap.min.js"></script>
+  </body>
+
+</html>
